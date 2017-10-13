@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #333333;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.333rem;
+    font-variant-ligatures: common-ligatures;
+    font-kerning: auto;
+    font-feature-settings: "liga" 1;
+    font-variant-numeric: oldstyle-nums;
+    font-feature-settings: "onum";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+    font-variant-numeric: lining-nums;
+    font-feature-settings: "lnum";
+}
+
+p {
+    margin: 1.333rem 0;
+    max-width: 65ch;
+}
+
+p:first-child {
+    margin-top: 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.wrapper {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 75rem) {
+    .wrapper {
+        max-width: 64rem;
+    }
+}
+
+@media (max-width: 64rem) {
+    .wrapper {
+        max-width: initial;
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+header {
+    margin-bottom: 1rem;
+}
+
+form {
+    margin-bottom: 1rem;
+}
+
+button, textarea {
+    font: inherit;
+}
+
+textarea.original-text {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 20rem;
+    padding: 0.5rem;
+}
+
+button {
+    border: 1px solid green;
+    border-radius: 1rem;
+    padding: 0.25rem 1rem;
+    background-color: white;
+    color: green;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+    color: white;
+}
+
+div.color-grid {
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+div.color-grid:after {
+    clear: both;
+    content: '';
+}
+
+div.color-grid__item {
+    float: left;
+    width: 2rem;
+    height: 2rem;
+    filter: brightness(175%);
+}
